@@ -4,7 +4,13 @@
 
 #include "digital_wheel.h"
 
-void run(digital_wheel self, int rolling_speed);
+digital_wheel create(int start, int end);
+
+void digitalWheelAppService_display(char *str, digital_wheel dw1, digital_wheel dw2);
+
+void digitalWheelAppService_run(digital_wheel dw1, digital_wheel dw2, int rolling_speed_1, int rolling_speed_2);
+
+void destroy(digital_wheel dw);
 
 #endif
 // Completed
